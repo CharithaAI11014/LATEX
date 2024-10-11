@@ -1,0 +1,178 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}      
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}    
+\usepackage{hhline}                                           
+\usepackage{ifthen}     
+
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{22.MISCELLANEOUS}
+\author{ai24btech11014 - Charitha Sri}
+
+\maketitle
+\bigskip       
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section{Section A}
+
+\begin{enumerate}
+	
+	\item A variable takes value x with frequency ${}^{n+x-1}C_{x},
+		x=0,1,2,\dots n$. The mode of the variable is $\dots$
+		\hfill{\brak{1982 - 2 Marks}}
+\section{Section B}
+	\item For real numbers x and y, we write x*y if $x-y+\sqrt{2}$ is an irrational number. Then, the relation * is an equivalence relation.
+		\hfill{\brak{1981 - 2 Marks}}
+\section{Section C}
+	\item If $X$ and $Y$ are two sets, then $X\cap \brak{X\cup Y}^c$ equals.
+		\hfill{\brak{1979}}
+		\begin{enumerate}
+		\begin{multicols}{2}
+		\item X
+		\item Y
+                \item $\phi$
+	        \item None of these
+		\end{multicols}
+	        \end{enumerate}
+	\item The expression $\frac{12}{3+\sqrt{5}+2\sqrt{2}}$ is equal to 
+		\hfill{\brak{1980}}
+		\begin{enumerate}
+                \item $1-\sqrt{5}+\sqrt{2}+\sqrt{10}$
+		\item $1+\sqrt{5}+\sqrt{2}-\sqrt{10}$
+		\item $1+\sqrt{5}-\sqrt{2}+\sqrt{10}$
+		\item $1-\sqrt{5}-\sqrt{2}+\sqrt{10}$
+		\end{enumerate}
+	\item Select the correct alternative in each of the following. Indicate your choice by the appropriate letter only.Let S be the standard deviation of n observations. Each of the n observations is multiplied by a constant c. Then the standard deviation of the resulting number is \hfill{\brak{1980}}
+		\begin{enumerate}
+		\begin{multicols}{2}
+		\item s
+		\item cs
+		\item s$\sqrt{c}$
+		\item none of these
+		\end{multicols}
+		\end{enumerate}
+	\item The standard deviation of 17 numbers is zero. Then \hfill{(1980)}
+		\begin{enumerate}
+		\item The numbers are in geometric progression with common ratio not equal to one.
+		\item Eight numbers are positive, eight are negative and one is zero.
+		\item either (a) or (b)
+		\item none of these
+		\end{enumerate}
+	\item Consider any set of 201 observations $x_{1},x_{2},\dots x_{200},x_{201}$. It is given that $x_{1}<x_{2}<\dots <x_{200}<x_{201}$.Then the mean deviation of this set of observations about a point k is minimum when k equals \hfill{(1981 -2 Marks)}
+		\begin{enumerate}
+			\item $\brak{x_{1}+x_{2}+\dots+x_{200}+x_{201}}/201$
+		\item $x_{1}$
+		\item $x_{101}$
+		\item $x_{201}$
+		\end{enumerate}
+
+	\item If $x_{1},x_{2},\dots,x_{n}$ are any ral numbers and n is any positive integer, then \hfill{(1982 - 2 Marks)}
+		\begin{enumerate}
+			\item $n\sum_{i=1}^{n} {x_{i}}^{2}<\brak{\sum_{i=1}^{n} x_{i}}^{2}$
+			\item $\sum_{i=1}^{n} {x_{i}}^{2} \geq \brak{\sum_{i=1}^{n} x_{i}}^{2}$
+			\item $\sum_{i=1}^{n} {x_{i}}^{2} \geq n \brak{\sum_{i=1}^{n} x_{i}}^{2}$
+		\item none of these
+		\end{enumerate}
+
+	\item Let $S={1,2,3,4}$.The total number of unordered pairs of disjoint subsets of S is equal to \hfill{\brak{2010}}
+		\begin{enumerate}
+                \begin{multicols}{4}
+		\item $25$
+		\item $34$
+		\item $42$
+		\item $41$
+		\end{multicols}
+		\end{enumerate}
+
+	\item Let $P={\theta:\sin\theta-\cos\theta=\sqrt{2} \cos\theta}$ and $Q={\theta:\sin\theta+\cos\theta=\sqrt{2}\sin\theta}$ be two sets. Then \hfill{\brak{2011}}
+		\begin{enumerate}
+		\begin{multicols}{2}
+		\item $P \subset Q and Q-P \neq \varnothing$
+		\item $Q \not\subset P$
+		\item $P \not\subset Q$
+		\item $P=Q$
+		\end{multicols}
+		\end{enumerate}
+\section{D}
+	\item In a college of 300 students every student reads 5 newspapers and every newspaperis read by 60 students.The number of newspapers is \hfill{\brak{1998 -2 Marks}}
+		\begin{enumerate}
+		\item at least $30$
+		\item at most $20$
+		\item exactly $25$
+		\item none of these
+		\end{enumerate}
+
+	\item Let $S_{1},S_{2},\dots$ be squares such that for each $n \geq 1$, the length of a side of $S_{n}$ equals the length of a diagonal of $S_{n+1}$.If the length of a side of $S_{1}$ is 10cm, then for which of the following values of n is the area of $S_{n}$ less than 1sq.cm? \hfill{\brak{1999 - 3 Marks}}
+		\begin{enumerate}
+		\begin{multicols}{4}
+		\item $7$
+		\item $8$
+		\item $9$
+		\item $10$
+		\end{multicols}
+		\end{enumerate}
+
+	\item Let $S ={1,2,3,\dots ,9}$. For $k=1,2,\dots,5,$ let $N_{k}$ be the number of subsets of S, each containing five elements out of which exactly k are odd. Then $N_{1}+N_{2}+N_{3}+N_{4}+N_{5}=$ \hfill{\brak{Jee Adv. 2017}}
+		\begin{enumerate}
+		\begin{multicols}{4}
+		\item $210$
+		\item $252$
+		\item $125$
+		\item $126$
+		\end{multicols}
+		\end{enumerate}
+\section{E}
+	\item An investigator interviewed 100 students to determine their preferences for the three drinks : milk (M), coffee (C) and tea (T).He reported the following :10 students had all the three drinks M,C and T;20 had M and C; 30 had C and T;25 had M and T; 12 had M only ; 5 had C only ; and 8 had T only.Using a Venn diagram find how many did not take any of the three drinks. \hfill{\brak{1978}}
+	\item (a) Construct a triangle with base 9cm and altitude 4cm, the ratio of the other two sides being 2:1
+		
+		(b) Construct a triangle in which the sum of the three sides is 15cm with base angles $60^\circ$ and $45^\circ$. Justify your steps. \hfill{\brak{1979}}
+\end{enumerate}
+
+\end{document}
