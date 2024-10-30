@@ -1,0 +1,52 @@
+
+\begin{center}
+\begin{tikzpicture}
+    \begin{axis}[
+        xmin=0, xmax=1.2,
+        ymin=0, ymax=1.2,
+        xtick=\empty, % Remove x-axis tick labels
+        ytick=\empty, % Remove y-axis tick labels
+        axis line style={draw=none}, % Remove axis lines
+        axis x line=bottom, % Draw x-axis at the bottom
+        axis y line=left, % Draw y-axis on the left
+        enlargelimits=true,
+        width=10cm,
+        height=7cm,
+        xlabel={Stress}, % X-axis label
+        ylabel={Strain}, % Y-axis label
+        label style={font=\small}, % Adjust label font size if necessary
+    ]
+    \draw [->] (0, 0) -- (0, 1.1);
+    \draw [->] (0, 0) -- (1.1, 0);
+
+    % Curve J
+    \addplot[
+        thick,
+        domain=0:0.7,
+        samples=100
+    ]
+    {x^0.5 + 0.6 * x};
+    \node at (axis cs:0.5,0.8) {J}; % Label for Curve J
+
+    % Curve K
+    \addplot[
+        thick,
+        domain=0:0.9,
+        samples=100
+    ]
+    {0.8 * x + 0.2 * x^2};
+    \node at (axis cs:0.7,0.6) {K}; % Label for Curve K
+
+    % Curve L
+    \addplot[
+        thick,
+        domain=0:1.0,
+        samples=100
+    ]
+    {0.6 * x + 0.15 * x^2};
+    \node at (axis cs:0.9,0.5) {L}; % Label for Curve L
+
+    \end{axis}
+\end{tikzpicture}
+\end{center}
+
