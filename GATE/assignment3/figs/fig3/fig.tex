@@ -1,0 +1,39 @@
+
+\begin{tikzpicture}[scale=1]
+
+% Horizontal lines
+\draw (6.75,12.25) -- (13.25,12.25);
+\draw (9.5,13.5) -- (13.25,13.5);
+
+% Arrows indicating distances
+\draw [<->, >=Stealth] (6.75,11.75) -- (13.25,11.75);
+\draw [<->, >=Stealth] (9.5,13.5) -- (13.5,13.5);
+
+% Vertical lines
+\draw (6.75,13) -- (6.75,11.5);
+\draw (9.5,14.25) -- (9.5,13);
+\draw (13.5,14.5) -- (13.5,12.5);
+
+% Zigzag lines at P
+\draw (6.75,13) -- (6.5,12.75);
+\draw (6.75,12.75) -- (6.5,12.5);
+\draw (6.75,12.5) -- (6.5,12.25);
+\draw (6.75,12.25) -- (6.5,12);
+\draw (6.75,12) -- (6.5,11.75);
+\draw (6.75,11.75) -- (6.5,11.5);
+\draw (6.75,11.5) -- (6.5,11.25);
+
+% Labels
+\node at (9.75,11.25) {L};
+\node at (11.5,14.25) {L/2};
+\node at (6.25,13.5) {P};
+\node at (13.5,15) {Q};
+\node at (9.75,14.75) {R};
+
+
+% Moment at R
+\draw[->, thick] (10.25,12.1) arc [start angle=0, end angle=180, radius=0.5] node[midway, left] {M};
+
+\end{tikzpicture}
+
+

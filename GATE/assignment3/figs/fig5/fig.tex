@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+
+% Arrows for flow
+\draw [->, >=Stealth] (6,9.5) -- (11.75,9.5);
+\draw [->, >=Stealth] (6.25,9.5) -- (6.25,14.5);
+
+% Labels for density and flow rate
+\node [font=\small] at (9.5,9.25) {Density, D};
+\node [font=\small] at (5.25,13.75) {Flow Rate, q};
+
+% Short lines representing segments
+\draw [-] (6.75,12.49) -- (10.75,12.49);
+\draw [-] (6.75,11.25) -- (11,12.25);
+\draw [-] (6.75,12.25) -- (11,11.5);
+\draw [-] (6.5,10.5) -- (11.25,10.5);
+
+% Labels for points
+\node [font=\small] at (7.75,12.7) {1};
+\node [font=\small] at (6.5,12.25) {2};
+\node [font=\small] at (11.25,12.25) {7};
+\node [font=\small] at (6.5,11.25) {3};
+\node [font=\small] at (11.25,11.5) {6};
+\node [font=\small] at (11.38,10.5) {5};
+\node [font=\small] at (6.35,10.5) {4};
+
+% Downward-opening parabola that passes through (6.5, 9.5) and (11.5, 9.5)
+\draw[domain=6:12,smooth,variable=\x,black] plot (\x,{-(0.4*(\x - 9)^2) + 12.5}); 
+
+
+\end{tikzpicture}

@@ -1,0 +1,76 @@
+
+\begin{tikzpicture}
+\tikzstyle{every node}=[font=\small]
+
+% Draw rectangles
+\draw (6.5,13.25) rectangle (7.25,9);
+\draw (5.5,12.5) rectangle (5.75,11);
+\draw (8,12.5) rectangle (8.25,11);
+\draw (8,12.75) rectangle (10,12.5);
+\draw (9,13.5) rectangle (9.5,12.75);
+\draw (6.25,12.75) rectangle (6.5,11);
+\draw (7.75,12.75) rectangle (8,11);
+\draw (8.75,11.75) rectangle (9,11.5);
+
+% Draw diagonal lines
+\foreach \x in {5.75, 6, 6.25, 6.5, 6.75, 7, 7.25, 7.5, 7.75, 8, 8.25} {
+    \draw (\x, 9) -- (\x - 0.25, 8.75);  % Diagonal lines going down left
+}
+
+% Draw additional diagonal lines connecting points at higher levels
+\draw (8, 12.5) -- (8.75, 11.75);  % Diagonal line
+\draw (8, 12.75) -- (9, 11.75);    % Diagonal line
+\draw (8.5, 12.75) -- (8.75, 11.75); % Diagonal line
+\draw (8.75, 12.75) -- (9, 11.75);  % Diagonal line
+
+
+% Draw dashed lines
+\draw [dashed] (8,12.75) -- (5.5,12.75);
+\draw [dashed] (5.75,12.5) -- (8,12.5);
+\draw [dashed] (5.5,12.75) -- (5.5,12.25);
+\draw [dashed] (5.75,11.25) -- (7.75,11.25);
+\draw [dashed] (5.75,11) -- (7.75,11);
+\draw [<->, >=Stealth] (4.75,12.5) -- (4.75,11.5);
+\draw [<->, >=Stealth] (4.75,11.5) -- (4.75,10);
+
+% Draw circles
+\foreach \y in {12.5, 11.5} {
+    \draw (6, \y) circle (0.25cm);
+    \draw (7.5, \y) circle (0.25cm);
+}
+
+% Draw lines for labels
+\draw [-] (8.75,11.75) -- (6.75,10);
+\draw [-] (8.75,11.5) -- (7,10);
+\draw [-] (6.75,10) -- (7,10);
+
+% Draw arrows
+\draw [->, >=Stealth] (9.25,13.75) -- (9.25,13);
+\draw [->, >=Stealth] (10.75,12.25) -- (10,12.5);
+\draw [->, >=Stealth] (5.5,13.5) -- (6,12.75);
+\draw [<->, >=Stealth] (6.5,14.75) -- (7.25,14.75);
+\draw [<->, >=Stealth] (7.25,14.75) -- (9.25,14.75);
+\draw [<->, >=Stealth] (9.5,11.75) -- (9.5,10);
+
+% Add nodes
+\node at (5.25,12.75) {P};
+\node at (5.25,11) {S};
+\node at (8.25,10.75) {R};
+\node at (9.25,11.75) {J};
+\node at (9.5,14) {W=90kN};
+\node at (7,15) {1m};
+\node at (8.5,15) {4m};
+\node at (5,13.75) {Roller(typical)};
+\node at (4.25,12.25) {1.5m};
+\node at (6.75,10.25) {O};
+\node at (8,9.5) {4m};
+\node at (10.25,13) {Q};
+\node at (11,12) {Rigid Platform};
+
+\node at (9.1,10.5) {3m};
+\node at (4.25,11.0) {2m};
+
+
+
+\end{tikzpicture}
+

@@ -1,0 +1,47 @@
+\begin{tikzpicture}
+\tikzstyle{every node}=[font=\small]
+
+% Draw horizontal lines
+\draw [-] (4.75,13.75) -- (9.75,13.75);
+\draw [-] (4.75,12.5) -- (9.75,12.5);
+\draw [-] (4.75,11.25) -- (9.75,11.25);
+\draw [-] (4.75,10) -- (9.75,10);
+
+% Draw double-headed arrows with labels
+\draw [<->, >=Stealth] (5.25,13.75) -- (5.25,12.5) node[pos=0.5, fill=white]{3m};
+\draw [<->, >=Stealth] (5.25,12.5) -- (5.25,11.25) node[pos=0.5, fill=white]{4m};
+\draw [<->, >=Stealth] (5.25,11.25) -- (5.25,10) node[pos=0.5, fill=white]{3m};
+
+% Draw arrows
+\foreach \x in {5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5} {
+    \draw [->, >=Stealth] (\x, 14.25) -- (\x, 13.75);
+}
+
+% Add labels
+\node [font=\small] at (5.5,14.75) {q = 70 kN/m$^{2}$};
+\node [font=\small] at (9,13) {Sand (Bulk unit weight = 18 kN/m$^{3}$)};
+\node [font=\small] at (11,13.75) {Ground level};
+\node [font=\small] at (11.25,12.5) {Ground water table};
+\node [font=\small] at (8.9,12) {Silty clay (Saturated unit weight = 20 kN/m$^{3}$)};
+\node [font=\small] at (9.25,10.75) {Clay (Saturated unit weight = 21 kN/m$^{3}$)};
+\node [font=\small] at (6.75,9.75) {Boulder Clay};
+\node [font=\small] at (9,12.25) {P};
+\node [font=\small] at (9,11) {Q};
+
+% Draw vertical lines for connections
+\foreach \x in {6, 9.25} {
+    \draw [-] (\x, 13.75) -- (\x-0.25, 13.5);
+    \draw [-] (\x, 13.75) -- (\x+0.25, 13.5);
+    \draw [-] (\x+0.25, 13.75) -- (\x, 13.5);
+    \draw [-] (\x+0.25, 13.75) -- (\x+0.5, 13.5);
+}
+
+\foreach \x in {9.25} {
+    \draw [-] (\x, 13.75) -- (\x-0.25, 13.5);
+    \draw [-] (\x, 13.75) -- (\x+0.25, 13.5);
+    \draw [-] (\x+0.25, 13.75) -- (\x, 13.5);
+    \draw [-] (\x+0.25, 13.75) -- (\x+0.5, 13.5);
+}
+
+\end{tikzpicture}
+
